@@ -1,5 +1,6 @@
 package hello.horas.utils.test;
 
+import hello.horas.utils.DiasUteis;
 import org.junit.Test;
 
 import java.text.DateFormat;
@@ -28,8 +29,18 @@ public class DiasUteisTest {
             date = anoMes.atDay(dia);
             if (!date.getDayOfWeek().equals(DayOfWeek.SATURDAY)&& !date.getDayOfWeek().equals(DayOfWeek.SUNDAY)){
                 listaDiasUteis.add(date);
+
             }
         }
         System.out.println(listaDiasUteis.size());
+    }
+
+
+    DiasUteis diasUteis = new DiasUteis();
+
+    @Test
+    public void testDias(){
+        int a = diasUteis.quantidadeDiasUteis(2015,2);
+        System.out.println(a);
     }
 }

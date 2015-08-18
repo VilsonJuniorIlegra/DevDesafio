@@ -10,6 +10,7 @@
 </head>
 <body>
     <h3 style="text-align:center">Sistema de Horas!!!</h3>
+    <p th:text="'Hello, ' + ${diasUteis} + '!'" />
     <div class="text-center" style="padding:50px 0">
         <form class="form-inline" th:action="@{/}" method="post">
             <label for="inputStartHour">Hora inicial:</label>
