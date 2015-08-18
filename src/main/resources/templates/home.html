@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
 </head>
 <body>
-    <h5>Bem vindo ao sistema de Horas!!!</h5>
+    <h3 style="text-align:center">Sistema de Horas!!!</h3>
     <div class="text-center" style="padding:50px 0">
         <form class="form-inline" th:action="@{/}" method="post">
-            <label for="inputUser">User:</label>
+            <label for="inputStartHour">Hora inicial:</label>
             <div class="form-group">
-                <input type="text" class="form-control" name="username" id="inputUser" placeholder="user"/>
+                <input type="text" class="form-control" name="username" id="inputStartHour" placeholder="00:00"/>
             </div>
-            <label for="inputPassword">Password:</label>
+            <label for="inputFinalHour">Hora final:</label>
             <div class="form-group">
-                <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Password"/>
+                <input type="password" class="form-control" name="password" id="inputFinalHour" placeholder="00:00"/>
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <input type="submit" class="btn btn-default" value="Entrar"/>
+                    <input type="submit" class="btn btn-default" value="Registrar"/>
                 </div>
             </div>
         </form>
